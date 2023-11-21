@@ -179,8 +179,8 @@ happy_hour_offers = {
         {'day' : 'Tuesday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
         {'day' : 'Wednesday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
         {'day' : 'Thursday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
-        {'day' : 'Friday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'}
-        {'day' : 'Saturday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'}
+        {'day' : 'Friday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
+        {'day' : 'Saturday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
         {'day' : 'Sunday', 'start_time' : '16:00', 'end_time' : '20:00', 'offer' : '2 cocktails for £12'}
     ],
     'Barca (Castlefield)' : [
@@ -204,7 +204,7 @@ for venue, offers in happy_hour_offers.items():
         start = datetime.datetime.strptime(promotion['start_time'], '%H:%M').time()
         end = datetime.datetime.strptime(promotion['end_time'], '%H:%M').time()
         if promotion['day'].lower() == now.strftime('%A').lower() and start <= now.time() <= end:
-            print(f"At {venue}, {promotion['offer']} is available now", file=open("/app/offers.txt", "w"))
+            print(f"At {venue}, {promotion['offer']} is available now")
 
 
 # Another thing to include:
