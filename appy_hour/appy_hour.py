@@ -41,14 +41,16 @@ Barca 241 12pm-x Tues-Fri
 Turtle Bay
 Tiki Hideaway NQ 2 for £14 until 2100
 The Shack NQ 2 for £12 Mon-Fri 1600-1900
+Blockbuster NQ 2 for £10 until 2000
+Dirty Martini 50% off cocktails Mon-Fri until 2100, Sat until 1900, Sun all day
 '''
 
 happy_hour_offers = {
     'Box Bar (Deansgate)' : [
-        {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '12:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '12:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '12:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
      
     ],
     'The Smithfield Social' : [
@@ -69,7 +71,7 @@ happy_hour_offers = {
         {'day' : 'Sunday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : '1wednesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'}
@@ -91,13 +93,13 @@ happy_hour_offers = {
         {'day' : 'Friday', 'start_time' : '12:00', 'end_time' : '18:00', 'offer' : '2 cocktails for £12'}
     ],
     'Las Iguanas' : [
-        {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+        {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
     ],
     'Federal': [
         {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £12'},
@@ -109,12 +111,12 @@ happy_hour_offers = {
         {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £12'}
     ],
     'Lonocove (NQ)' : [
-        {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
+        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '13:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
     ],
     'Be At One' : [
         {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
@@ -139,13 +141,13 @@ happy_hour_offers = {
         {'day' : 'Friday', 'start_time' : '17:00', 'end_time' : '20:00', 'offer' : '2 for 1 cocktails'}
     ],
     'Slug & Lettuce' : [
-        {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+        {'day' : 'Sunday', 'start_time' : '12:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '12:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '12:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'}
     ],
     'Revolution' : [
         {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £10'},
@@ -171,6 +173,24 @@ happy_hour_offers = {
         {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+    ],
+    'Banyan Tree (Castlefield)' : [
+        {'day' : 'Monday', 'start_time' : '17:30', 'end_time' : '19:30', 'offer' : '2 cocktails for £12'},
+        {'day' : 'Tuesday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
+        {'day' : 'Wednesday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
+        {'day' : 'Thursday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
+        {'day' : 'Friday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'}
+        {'day' : 'Saturday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'}
+        {'day' : 'Sunday', 'start_time' : '16:00', 'end_time' : '20:00', 'offer' : '2 cocktails for £12'}
+    ],
+    'Barca (Castlefield)' : [
+        {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
     ]
 }
 
@@ -186,3 +206,6 @@ for venue, offers in happy_hour_offers.items():
         if promotion['day'].lower() == now.strftime('%A').lower() and start <= now.time() <= end:
             print(f"At {venue}, {promotion['offer']} is available now", file=open("/app/offers.txt", "w"))
 
+
+# Another thing to include:
+# How to amend it for bars that are open past 23:59? E.g. Barca is open until 03:00 Fri & Sat night (Sat & Sun morning)
