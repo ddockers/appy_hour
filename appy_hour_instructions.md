@@ -115,3 +115,13 @@ Inspecting each container by running `docker container inspect <name of containe
 Next thing to do is to get the React container to send a request to the Python container to get its output.
 
 Also, looking back at my volumes chat file, I should maybe send the Python output to a file in the shared volume directory.
+
+## Building Image
+
+Each time I update the code to then run in a container, I have to rebuild the image.
+
+The source code has been updated, so I need to `cd` into the appy-hour code folder and run:
+
+```
+docker build -f Dockerfile.dev -t ddoxton/appy-hour
+```
