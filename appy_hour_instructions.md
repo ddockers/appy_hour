@@ -123,5 +123,35 @@ Each time I update the code to then run in a container, I have to rebuild the im
 The source code has been updated, so I need to `cd` into the appy-hour code folder and run:
 
 ```
-docker build -f Dockerfile.dev -t ddoxton/appy-hour
+docker build -f Dockerfile.dev -t ddoxton/appy-hour .
+```
+
+A way to make the project run is to create docker-compose files. I can choose the image, volumes, networks and other config settings and run both containers.
+
+Here's an example of the docker-compose file I could create:
+
+```
+version: '3'
+services:
+  appy-hour-python:
+    image: ddoxton/appy-hour
+    container_name: appy-hour-python
+    command: python appy_hour.py
+    volumes:
+      - appy-hour-vol:/app
+    networks:
+      - appy-hour-net
+  appy-hour-react:
+    image: ddoxton/appy-react
+    container_name: appy-hour-react
+    ports:
+      - '80:80'
+    depends_on:
+      - appy-hour-python
+    networks:
+      - appy-hour-net
+volumes:
+  appy-hour-vol:
+networks:
+  appy-hour-net:
 ```
