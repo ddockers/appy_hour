@@ -155,3 +155,46 @@ volumes:
 networks:
   appy-hour-net:
 ```
+
+
+I would need to include somewhere that the containers need to be built with Dockerfile.dev files, instead of the default Dockerfile.
+
+`docker-compose.yml` will need to be saved in the project directory. The build context for each container will need to be included. E.g., the `appy-hour-python` container would need to have the context of `./appy-hour` and `appy-hour-react` would be `./appy-hour-react`
+
+This file will create two services, appy-hour-python and appy-hour-react, each with their own image, container name, and command. The appy-hour-python service will run the appy_hour.py file from the appy-hour-vol volume, which will be mounted to the /app directory in the container. The appy-hour-react service will run on port 80 and depend on the appy-hour-python service. Both services will use the appy-hour-net network to communicate with each other.
+
+The colon at the end of appy-hour-vol and appy-hour-net in the last four lines of the docker compose file is used to indicate that the volume and network are defined as top-level elements in the file. This means that they are not specific to any service, but can be shared by multiple services in the file. The colon separates the name of the volume or network from the next field, which is optional and can specify the configuration of the volume or network.
+
+Here is an updated `docker-compose.yml` that I'll try to use:
+
+```
+version: '3'
+services:
+  appy-hour-python:
+    image: ddoxton/appy-hour
+    container_name: appy-hour-python
+    command: python appy_hour.py
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy_hour
+    volumes:
+      - appy-hour-vol:/app
+    networks:
+      - appy-hour-net
+  appy-hour-react:
+    image: ddoxton/appy-react
+    container_name: appy-hour-react
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy-hour-react
+    ports:
+      - '80:80'
+    depends_on:
+      - appy-hour-python
+    networks:
+      - appy-hour-net
+volumes:
+  appy-hour-vol:
+networks:
+  appy-hour-net:
+```

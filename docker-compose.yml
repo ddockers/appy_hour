@@ -1,0 +1,29 @@
+version: '3'
+services:
+  appy-hour-python:
+    image: ddoxton/appy-hour
+    container_name: appy-hour-python
+    command: python appy_hour.py
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy_hour
+    volumes:
+      - appy-hour-vol:/app
+    networks:
+      - appy-hour-net
+  appy-hour-react:
+    image: ddoxton/appy-react
+    container_name: appy-hour-react
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy-hour-react
+    ports:
+      - '80:80'
+    depends_on:
+      - appy-hour-python
+    networks:
+      - appy-hour-net
+volumes:
+  appy-hour-vol:
+networks:
+  appy-hour-net:
