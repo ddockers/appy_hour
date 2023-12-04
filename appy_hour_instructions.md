@@ -188,7 +188,7 @@ services:
       dockerfile: Dockerfile.dev
       context: ./appy-hour-react
     ports:
-      - '80:80'
+      - '3000:80'
     depends_on:
       - appy-hour-python
     networks:
@@ -198,3 +198,7 @@ volumes:
 networks:
   appy-hour-net:
 ```
+
+### Troubleshooting
+
+`localhost` and `localhost:3000` cannot be reached. I need to remember the previous reasons for not showing up on localhost.
