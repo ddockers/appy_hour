@@ -27,7 +27,7 @@ services:
     networks:
       - appy-hour-net
     environment: 
-      - REACT_APP_API_URL=http://appy-hour-python:5000
+      - REACT_APP_API_URL=http://appy-hour-python:3000
       
 volumes:
   appy-hour-vol:

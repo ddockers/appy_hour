@@ -320,3 +320,60 @@ I corrected the port mapping under `appy-hour-react` to `ports: - '3000:3000`.
 When I run `docker-compose up --build`, the react app can be viewed at `localhost:3000`. The Python output isn't displayed.
 
 I assume I need to map the Python container to the React container.
+
+I've amended `docker-compose.yml` several times; here is my latest iteration:
+
+```
+version: '3'
+services:
+  appy-hour-python:
+    image: ddoxton/appy-hour
+    container_name: appy-hour-python
+    command: python appy_hour.py
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy_hour
+    volumes:
+      - appy-hour-vol:/app
+    networks:
+      - appy-hour-net
+    ports:
+      - '5000:5000'
+  appy-hour-react:
+    image: ddoxton/appy-react
+    container_name: appy-hour-react
+    command: npm run start
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy-hour-react
+    ports:
+      - '3000:3000'
+    depends_on:
+      - appy-hour-python
+    networks:
+      - appy-hour-net
+    environment: 
+      - REACT_APP_API_URL=http://appy-hour-python:3000
+      
+volumes:
+  appy-hour-vol:
+networks:
+  appy-hour-net:
+```
+
+It still only shows the React app homepage at `localhost:3000`.
+
+### Network Troubleshooting
+
+I ran `docker network ls` and received a curious result:
+
+![Imgur](https://i.imgur.com/IPjsUzT.png)
+
+A new network called `appy_hour_appy-hour-net` has been created.
+
+Running `docker network inspect appy_hour_appy-hour-net` showed that only `appy-hour-react` is connected to the network, not `appy-hour-python`.
+
+Running inspect on `appy-hour-net` showed that no containers are connected. It could be because the Python container stops running upon completion, or that the Python container isn't even running on `appy-hour-net`.
+
+Quite a few bits to figure out.
+
