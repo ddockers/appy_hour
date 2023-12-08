@@ -267,15 +267,56 @@ Doing this gave the following error:
 
 ### Troubleshooting
 
-It seems that the error you received is related to a missing module. The error message indicates that the module `/app/REACT_APP_API_URL=http:/appy-hour-python:5000` cannot be found.
+This error was because the environment variable was set in the command of the `appy-hour-react` service. 
 
-This error message suggests that there is an issue with the way you are setting the `REACT_APP_API_URL` environment variable. It appears that you have set the value of this variable to `/app/REACT_APP_API_URL=http:/appy-hour-python:5000`, which is not a valid module name.
+The environment variable should be set in `environment` under `appy-hour-react`.
 
-To fix this issue, you should modify the `command` of the `appy-hour-react` service in your `docker-compose.yml` file to set the `REACT_APP_API_URL` environment variable to `http://appy-hour-python:5000`. Here's an example:
+## Amended docker-compose file:
 
 ```
-command: REACT_APP_API_URL=http://appy-hour-python:5000 npm run start
+version: '3'
+services:
+  appy-hour-python:
+    image: ddoxton/appy-hour
+    container_name: appy-hour-python
+    command: python appy_hour.py
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy_hour
+    volumes:
+      - appy-hour-vol:/app
+    networks:
+      - appy-hour-net
+    ports:
+      - '5000:5000'
+  appy-hour-react:
+    image: ddoxton/appy-react
+    container_name: appy-hour-react
+    command: npm run start
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./appy-hour-react
+    ports:
+      - '3000:80'
+    depends_on:
+      - appy-hour-python
+    networks:
+      - appy-hour-net
+    environment: 
+      - REACT_APP_API_URL=http://appy-hour-python:5000
+      
+volumes:
+  appy-hour-vol:
+networks:
+  appy-hour-net:
 ```
 
-This will set the `REACT_APP_API_URL` environment variable to `http://appy-hour-python:5000`, which is the IP address of the Python container.
+### Troubleshooting
 
+The webpack compuiles successfully, but the page cannot be reached at localhost:3000 (or at http://appy-hour-python:5000 fwiw).
+
+I corrected the port mapping under `appy-hour-react` to `ports: - '3000:3000`.
+
+When I run `docker-compose up --build`, the react app can be viewed at `localhost:3000`. The Python output isn't displayed.
+
+I assume I need to map the Python container to the React container.

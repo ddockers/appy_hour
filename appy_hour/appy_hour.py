@@ -38,11 +38,12 @@ Oxnoble (Liverpool rd) 241 ADED
 On the Hush 241 all day Wed, 1700-x Thu/Fri, 2000-x Sat, 1500-x Sun
 Banyan Tree (Castlefield) 2 cocktails for £12 & 2 house dbls for £10, Mon 1730-1930, Tue-Sat 1900-2100, Sun 1600-2000
 Barca 241 12pm-x Tues-Fri
-Turtle Bay
+Turtle Bay Sun-Fri 1100-1900 & 2130-2330/0130. Sat 1000-1900 & 2130-0130
 Tiki Hideaway NQ 2 for £14 until 2100
 The Shack NQ 2 for £12 Mon-Fri 1600-1900
 Blockbuster NQ 2 for £10 until 2000
 Dirty Martini 50% off cocktails Mon-Fri until 2100, Sat until 1900, Sun all day
+Guilty by Association NQ 2 for £12 Sun-Fri until 2200, Sat until 2100
 '''
 
 happy_hour_offers = {
@@ -191,6 +192,22 @@ happy_hour_offers = {
         {'day' : 'Thursday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+    ],
+    'Turtle Bay' : [
+        {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Sunday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '21:30', 'end_time' : '23:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '21:30', 'end_time' : '23:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '21:30', 'end_time' : '23:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '10:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
     ]
 }
 

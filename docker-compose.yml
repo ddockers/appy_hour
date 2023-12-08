@@ -16,16 +16,19 @@ services:
   appy-hour-react:
     image: ddoxton/appy-react
     container_name: appy-hour-react
-    command: REACT_APP_API_URL=http://appy-hour-python:5000 npm run start
+    command: npm run start
     build:
       dockerfile: Dockerfile.dev
       context: ./appy-hour-react
     ports:
-      - '3000:80'
+      - '3000:3000'
     depends_on:
       - appy-hour-python
     networks:
       - appy-hour-net
+    environment: 
+      - REACT_APP_API_URL=http://appy-hour-python:5000
+      
 volumes:
   appy-hour-vol:
 networks:
