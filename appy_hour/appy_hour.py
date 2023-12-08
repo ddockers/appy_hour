@@ -226,3 +226,4 @@ for venue, offers in happy_hour_offers.items():
 
 # Another thing to include:
 # How to amend it for bars that are open past 23:59? E.g. Barca is open until 03:00 Fri & Sat night (Sat & Sun morning)
+# Adding "until...[end_time]" to the output.
