@@ -375,5 +375,22 @@ Running `docker network inspect appy_hour_appy-hour-net` showed that only `appy-
 
 Running inspect on `appy-hour-net` showed that no containers are connected. It could be because the Python container stops running upon completion, or that the Python container isn't even running on `appy-hour-net`.
 
-Quite a few bits to figure out.
+`appy_hour_appy-hour-net` was created because Docker automatically prepends the name of a project directory to the network name.
 
+Potential amendments to be made:
+
+```
+services:
+  appy-hour-python:
+    # other configuration options
+    networks:
+      - appy-hour-net
+  appy-hour-react:
+    # other configuration options
+    networks:
+      - appy-hour-net
+networks:
+  appy-hour-net:
+    external: true
+
+```
