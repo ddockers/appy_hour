@@ -184,14 +184,14 @@ happy_hour_offers = {
         {'day' : 'Saturday', 'start_time' : '19:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £12'},
         {'day' : 'Sunday', 'start_time' : '16:00', 'end_time' : '20:00', 'offer' : '2 cocktails for £12'}
     ],
-    'Barca (Castlefield)' : [
-        {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Monday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '11:00', 'end_time' : '23:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '11:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+    'Guilty by Association' : [
+        {'day' : 'Sunday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'}
     ],
     'Turtle Bay' : [
         {'day' : 'Sunday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
@@ -220,8 +220,9 @@ for venue, offers in happy_hour_offers.items():
     for promotion in offers:
         start = datetime.datetime.strptime(promotion['start_time'], '%H:%M').time()
         end = datetime.datetime.strptime(promotion['end_time'], '%H:%M').time()
+        end_time = end.strftime('%H:%M')
         if promotion['day'].lower() == now.strftime('%A').lower() and start <= now.time() <= end:
-            print(f"At {venue}, {promotion['offer']} is available now")
+            print(f"At {venue}, {promotion['offer']} is available until {end_time}")
 
 
 # Another thing to include:

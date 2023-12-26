@@ -313,7 +313,7 @@ networks:
 
 ### Troubleshooting
 
-The webpack compuiles successfully, but the page cannot be reached at localhost:3000 (or at http://appy-hour-python:5000 fwiw).
+The webpack compiles successfully, but the page cannot be reached at localhost:3000 (or at http://appy-hour-python:5000 fwiw).
 
 I corrected the port mapping under `appy-hour-react` to `ports: - '3000:3000`.
 
@@ -394,3 +394,7 @@ networks:
     external: true
 
 ```
+
+Running `docker-compose up` after making the above amendments caused the Python container to run end exit, but the React container doesn't appear to start.
+
+According to Docker Dexktop, the React app is running, despite there being no indication of this in the GitBash terminal. The React container is in fact running, seeing as the React homepage is displayed at `localhost:3000`.
