@@ -157,7 +157,7 @@ happy_hour_offers = {
         {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £10'},
         {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £10'}
     ],
-    'The Oxnoble (Liverpool Road)' : [
+    'The Oxnoble' : [
         {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
@@ -234,14 +234,21 @@ happy_hour_offers = {
         {'day' : 'Sunday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £11'},
         {'day' : 'Sunday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '£5 frozen cocktails'}
     ],
-    'Junior Jacksons' : [
+    "Junior Jackson's" : [
         {'day' : 'Monday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Tuesday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Wednesday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Thursday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Friday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+        {'day' : 'Saturday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Sunday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'}
     ]
 }
 
@@ -260,5 +267,7 @@ for venue, offers in happy_hour_offers.items():
 
 
 # Another thing to include:
-# How to amend it for bars that are open past 23:59? E.g. Barca is open until 03:00 Fri & Sat night (Sat & Sun morning)
+# How to amend it for bars that are open past 23:59? E.g. Barca is open until 03:00 Fri & Sat night (Sat & Sun morning).
+# I think another line would need to be added with the offer starting at 0:00 until 03:00. 
+# Done for JJs. For Blockbusters there would need to be 4 entries for each day. Effort.
 # Adding "until...[end_time]" to the output.
