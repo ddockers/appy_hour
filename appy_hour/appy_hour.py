@@ -206,7 +206,7 @@ happy_hour_offers = {
         {'day' : 'Friday', 'start_time' : '11:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Friday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '10:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
     ],
     'Garten Bar (Corn Exchange)' : [
         {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
@@ -222,8 +222,27 @@ happy_hour_offers = {
         {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
         {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
         {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
-        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'}
     ],
+    'Blockbusters NQ' : [
+        {'day' : 'Thursday' , 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £11'},
+        {'day' : 'Thursday' , 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£5 frozen cocktails'},
+        {'day' : 'Friday' , 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £11'},
+        {'day' : 'Friday' , 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£5 frozen cocktails'},
+        {'day' : 'Saturday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £11'},
+        {'day' : 'Saturday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '£5 frozen cocktails'},
+        {'day' : 'Sunday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £11'},
+        {'day' : 'Sunday' , 'start_time' : '13:00', 'end_time' : '23:59', 'offer' : '£5 frozen cocktails'}
+    ],
+    'Junior Jacksons' : [
+        {'day' : 'Monday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+    ]
 }
 
 # strptime is string parse time
