@@ -69,13 +69,13 @@ happy_hour_offers = {
         {'day' : 'Thursday', 'start_time' : '15:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'}
     ],
     'Pixel Bar' : [
-        {'day' : 'Sunday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 for 1 cocktails'}
+        {'day' : 'Sunday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'},
+        {'day' : 'Saturday', 'start_time' : '12:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £13'}
     ],
     '7 Sins' : [
         {'day' : 'Sunday', 'start_time' : '12:00', 'end_time' : '19:00', 'offer' : '2 cocktails for £10'},
@@ -111,13 +111,12 @@ happy_hour_offers = {
         {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £12'},
         {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 cocktails for £12'}
     ],
-    'Lonocove (NQ)' : [
-        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '23:59', 'offer' : '£6 cocktails'},
-        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
-        {'day' : 'Saturday', 'start_time' : '13:00', 'end_time' : '20:00', 'offer' : '£6 cocktails'},
+    'The Wayfarer' : [
+        {'day' : 'Monday', 'start_time' : '18:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'},
+        {'day' : 'Tuesday', 'start_time' : '18:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'},
+        {'day' : 'Wednesday', 'start_time' : '18:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'},
+        {'day' : 'Thursday', 'start_time' : '18:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'},
+        {'day' : 'Friday', 'start_time' : '18:00', 'end_time' : '21:00', 'offer' : '2 cocktails for £10'},
     ],
     'Be At One' : [
         {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
@@ -208,7 +207,23 @@ happy_hour_offers = {
         {'day' : 'Friday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '10:00', 'end_time' : '19:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Saturday', 'start_time' : '21:30', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
-    ]
+    ],
+    'Garten Bar (Corn Exchange)' : [
+        {'day' : 'Sunday', 'start_time' : '09:00', 'end_time' : '22:00', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Monday', 'start_time' : '09:00', 'end_time' : '22:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '09:00', 'end_time' : '22:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '09:00', 'end_time' : '22:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '09:00', 'end_time' : '22:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Friday', 'start_time' : '09:00', 'end_time' : '23:30', 'offer' : '2 for 1 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '09:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'}
+    ],
+    'A venue at 11 Dale Street' : [
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+        {'day' : 'Friday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6 cocktails'},
+    ],
 }
 
 # strptime is string parse time

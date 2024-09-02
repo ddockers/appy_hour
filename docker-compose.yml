@@ -33,4 +33,3 @@ volumes:
   appy-hour-vol:
 networks:
   appy-hour-net:
-    external: true
