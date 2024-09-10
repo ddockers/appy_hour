@@ -249,7 +249,16 @@ happy_hour_offers = {
         {'day' : 'Saturday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Sunday', 'start_time' : '15:00', 'end_time' : '23:59', 'offer' : '2 for 1 cocktails'},
         {'day' : 'Sunday', 'start_time' : '00:00', 'end_time' : '03:00', 'offer' : '2 for 1 cocktails'}
-    ]
+    ],
+    "Nell's" : [
+        {'day' : 'Sunday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Monday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Tuesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Wednesday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Thursday', 'start_time' : '16:00', 'end_time' : '19:00', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Friday', 'start_time' : '20:00', 'end_time' : '23:59', 'offer' : '£6.50 cocktails'},
+        {'day' : 'Saturday', 'start_time' : '20:00', 'end_time' : '23:59', 'offer' : '£6.50 cocktails'}
+    ],
 }
 
 # strptime is string parse time
